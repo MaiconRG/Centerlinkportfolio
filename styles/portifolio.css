@@ -5,13 +5,21 @@
 
 /* Variáveis de cor */
 :root {    
-  --cor-primaria: rgb(41, 128, 185); /* Azul médio para destaque */
-  --cor-secundaria: #95a5a6; /* Cinza suave */
-  --cor-terciaria: #ecf0f1; /* Branco claro */
-  --cor-de-titulos: #2c3e50; /* Azul escuro para títulos */
-  --cor-de-sub-titulos: #34495e; /* Azul um pouco mais claro para subtítulos */
-  --cor-de-textos: #2c3e50; /* Azul escuro para textos */
-  --cor-links: #2980b9; /* Azul médio para links */
+  --cor-primaria: #212121;
+  --cor-secundaria: #166FD4;
+  --cor-terciaria: #305d70;
+  --cor-terciaria-1: rgba(71, 201, 253, 0.36);
+  --cor-quaternaria: #f4f5fd;
+  --cor-hover: #001949;
+  --cor-texto: #ffffff;
+  --cor-texto-hover: #001949;
+  --cor-borda-hover: #000000;
+  --cor-de-titulos: #ffffff; /* Azul escuro para títulos */
+  --cor-de-sub-titulos: #1abc9c; /* Azul um pouco mais claro para subtítulos */
+  --cor-de-textos-1: #2c3e50; /* Azul escuro para textos */
+  --cor-de-textos-2: #2c3e50; /* Azul escuro para textos */
+  --cor-de-textos-3: #2c3e50; /* Azul escuro para textos */
+  --cor-links: #ffffff; /* Azul médio para links */
   --cor-links-hover: #1abc9c; /* Verde água para hover dos links */
   --cor-background: #ecf0f1; /* Fundo branco claro */
   --cor-secundaria-background: #bdc3c7; /* Cinza claro para fundos */
@@ -22,7 +30,7 @@
   --cor-sombras: rgba(0, 0, 0, 0.1); /* Sombras sutis */
   --cor-fundos: #ffffff; /* Branco para fundos */
   --cor-fundos-claros: #ecf0f1; /* Branco suave para áreas claras */
-  --cor-luz-hover: rgba(255, 255, 0, 0.6); /* Cor da luz ao redor das imagens no hover (amarelo claro) */
+  --cor-luz-hover: rgb(146 166 181 / 76%); /* Cor da luz ao redor das imagens no hover (amarelo claro) */
 }
 
 * {
@@ -40,7 +48,7 @@ main {
 }
 
 header {
-  background-color: var(--cor-secundaria-background);
+  background-color: var(--cor-secundaria);
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -91,7 +99,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--cor-background);
+  background-color: var(--cor-primaria);
   height: 80vh;
   flex-wrap: wrap;
   /* Define o contêiner de conteúdo como flexbox, com espaçamento igual entre itens,
@@ -100,11 +108,11 @@ header {
 }
 
 .conteudo img {
-  width: 40vw;
+  width: 25vw;
   max-width: 420px;
   height: auto;
   max-height: 420px;
-  border-radius: 50%;
+  border-radius: 4vw 2vw 4vw 2vw;
   /* Define as imagens dentro do contêiner de conteúdo para ter uma largura de 40% da largura da viewport,
      largura máxima de 420px, altura automática, altura máxima de 420px e bordas arredondadas em círculo. */
 }
@@ -134,16 +142,23 @@ h3 {
   width: 50vw;
   margin-top: 6vh;
   font-size: 1.5vw;
-  color: var(--cor-de-textos);
+  color: var(--cor-texto);
   /* Define a largura máxima, largura relativa, margem superior, tamanho da fonte e cor para parágrafos dentro de texto. */
+}
+
+div .texto{
+  background-color: var(--cor-terciaria);
+  padding: 5vw;
+  border-radius: 6vw 2vw 6vw 2vw;
 }
 
 #projetos {
   display: flex;
   justify-content: space-around;
-  background-color: var(--cor-fundos-claros);
+  background-color: var(--cor-primaria);
   padding: 2vh 0;
   flex-wrap: wrap;
+  padding: 5vw;
   /* Define o contêiner de projetos como flexbox com espaçamento igual entre itens,
      cor de fundo, preenchimento superior e inferior e permite a reorganização em telas menores. */
 }
@@ -299,4 +314,44 @@ h3 {
     font-size: 4vw;
   }
   /* Estilos aplicados quando a largura da viewport é 480px ou menor, ajustando ainda mais tamanhos de fonte e larguras para dispositivos muito pequenos. */
+}
+
+
+footer {
+  background-color:var(--cor-terciaria);
+  color: white;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.contact, .copyright, .quick-links, .certifications, .location {
+  flex: 1;
+  margin: 10px;
+
+}
+
+a {
+  color: #ffcc00; /* Cor para os links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer-quote {
+  text-align: center;
+  font-style: italic;
+  padding-left: 18vw;
+  padding-top: 2vh;
 }

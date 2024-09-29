@@ -177,6 +177,7 @@ div .texto{
   border-radius: 30px;
   box-shadow: 0 4px 8px var(--cor-sombras);
   transition: transform 0.3s;
+  padding-bottom: 1vw;
   /* Define os projetos com largura máxima, largura relativa, altura automática,
      layout flexível, bordas arredondadas, cor de fundo, sombra e transições suaves para transformações. */
 }
@@ -187,10 +188,10 @@ div .texto{
 }
 
 .projetos img {
-  max-width: 250px;
+  max-width: 200px;
   width: 25vw;
+  padding: 25px 0 25px 0;
   height: auto;
-  border-radius: 3vw;
   transition: filter 0.3s;
   /* Define a largura máxima, largura relativa, altura automática e bordas arredondadas para imagens dentro dos projetos,
      e adiciona uma transição suave para o efeito de filtro. */
@@ -321,8 +322,6 @@ footer {
   background-color:var(--cor-terciaria);
   color: white;
   padding: 20px;
-  text-align: left;
-  display: flex;
   
 }
 
@@ -352,6 +351,5 @@ a:hover {
 .footer-quote {
   text-align: center;
   font-style: italic;
-  padding-left: 18vw;
-  padding-top: 2vh;
+  padding-top: 5vh;
 }

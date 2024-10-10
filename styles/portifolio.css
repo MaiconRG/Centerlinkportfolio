@@ -20,7 +20,7 @@
   --cor-de-textos-2: #2c3e50; /* Azul escuro para textos */
   --cor-de-textos-3: #2c3e50; /* Azul escuro para textos */
   --cor-links: #ffffff; /* Azul médio para links */
-  --cor-links-hover: #1abc9c; /* Verde água para hover dos links */
+  --cor-links-hover: #531abc; /* Verde água para hover dos links */
   --cor-background: #ecf0f1; /* Fundo branco claro */
   --cor-secundaria-background: #bdc3c7; /* Cinza claro para fundos */
   --cor-de-cabecalho: #2c3e50; /* Azul escuro para cabeçalhos */
@@ -77,6 +77,7 @@ header {
 }
 
 #links {
+  font-size: 1vw;
   display: flex;
   margin-right: 5%;
   text-decoration: none;
@@ -87,10 +88,11 @@ header {
   margin-right: 7%;
   color: var(--cor-links);
   transition: 500ms;
+  text-decoration: none;
   /* Define links dentro do contêiner com uma margem direita de 7%, cor de texto e transição suave de 500ms para mudanças. */
 }
 
-#links a:hover {
+#links  a:hover {
   color: var(--cor-links-hover);
   /* Muda a cor do texto dos links ao passar o cursor para a cor definida para hover. */
 }
@@ -101,7 +103,6 @@ header {
   align-items: center;
   background-color: var(--cor-primaria);
   height: 80vh;
-  flex-wrap: wrap;
   /* Define o contêiner de conteúdo como flexbox, com espaçamento igual entre itens,
      alinhamento centralizado, cor de fundo e altura de 80% da altura da viewport,
      permitindo que os itens sejam reorganizados em telas menores. */
@@ -109,9 +110,8 @@ header {
 
 .conteudo img {
   width: 25vw;
-  max-width: 420px;
   height: auto;
-  max-height: 420px;
+  margin: 5vw;
   border-radius: 4vw 2vw 4vw 2vw;
   /* Define as imagens dentro do contêiner de conteúdo para ter uma largura de 40% da largura da viewport,
      largura máxima de 420px, altura automática, altura máxima de 420px e bordas arredondadas em círculo. */
@@ -124,7 +124,7 @@ h3 {
 }
 
 .texto h1 {
-  font-size: 3.5vw;
+  font-size: 3.1vw;
   letter-spacing: 0.2vw;
   color: var(--cor-de-titulos);
   /* Define o tamanho da fonte, espaçamento entre letras e cor para cabeçalhos h1 dentro de texto. */
@@ -138,17 +138,20 @@ h3 {
 }
 
 .texto p {
-  max-width: 600px;
-  width: 50vw;
+  width: auto;
+  height: 50vh;
   margin-top: 6vh;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   color: var(--cor-texto);
   /* Define a largura máxima, largura relativa, margem superior, tamanho da fonte e cor para parágrafos dentro de texto. */
 }
 
 div .texto{
   background-color: var(--cor-terciaria);
+  width: auto;
+  height: 60vh;
   padding: 5vw;
+  margin: 5vw;
   border-radius: 6vw 2vw 6vw 2vw;
 }
 
@@ -156,17 +159,14 @@ div .texto{
   display: flex;
   justify-content: space-around;
   background-color: var(--cor-primaria);
-  padding: 2vh 0;
-  flex-wrap: wrap;
   padding: 5vw;
   /* Define o contêiner de projetos como flexbox com espaçamento igual entre itens,
      cor de fundo, preenchimento superior e inferior e permite a reorganização em telas menores. */
 }
 
 .projetos {
-  max-width: 360px;
   width: 36vw;
-  height: auto;
+  height: 36vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -174,8 +174,8 @@ div .texto{
   margin: 2vh 1vw;
   border: solid 0.18vw var(--cor-de-bordas);
   background-color: var(--cor-terciaria);
-  border-radius: 30px;
-  box-shadow: 0 4px 8px var(--cor-sombras);
+  border-radius: 3vw;
+  box-shadow: 0 0.4vw 0.8vw var(--cor-sombras);
   transition: transform 0.3s;
   padding-bottom: 1vw;
   /* Define os projetos com largura máxima, largura relativa, altura automática,
@@ -183,22 +183,22 @@ div .texto{
 }
 
 .projetos:hover {
-  transform: translateY(-10px);
+  transform: translateY(-1vw);
   /* Adiciona efeito de elevação ao passar o cursor sobre o projeto. */
 }
 
 .projetos img {
-  max-width: 200px;
-  width: 25vw;
-  padding: 25px 0 25px 0;
+ 
+  width: 18vw;
   height: auto;
   transition: filter 0.3s;
+  padding: 2.5vw 0 2.5vw 0;
   /* Define a largura máxima, largura relativa, altura automática e bordas arredondadas para imagens dentro dos projetos,
      e adiciona uma transição suave para o efeito de filtro. */
 }
 
 .projetos:hover img {
-  filter: drop-shadow(0 0 15px var(--cor-luz-hover));
+  filter: drop-shadow(0 0 1.5vw var(--cor-luz-hover));
   /* Adiciona uma sombra suave ao redor da imagem ao passar o cursor sobre o projeto,
      criando um efeito de luz ao redor da imagem. */
 }
@@ -223,8 +223,6 @@ div .texto{
 }
 
 .suporte_botao .btn_ver_mais {
-  max-width: 180px;
-  max-height: 60px;
   width: 15vw;
   height: 7vh;
   border-radius: 1vw;
@@ -233,88 +231,18 @@ div .texto{
      bordas arredondadas e tamanho da fonte. */
 }
 
-.botao_ver_mais a p {
+.botao_ver_mais p {
   color: var(--cor-links);
+  letter-spacing: 0.2vw;
   font-size: 1vw;
   transition: 500ms;
   text-decoration: none;
   /* Define a cor do texto e tamanho da fonte para o parágrafo dentro do link do botão, com transição suave de 500ms para mudanças e remove o sublinhado. */
 }
 
-.botao_ver_mais a p:hover {
+.botao_ver_mais p:hover {
   color: var(--cor-links-hover);
   /* Muda a cor do texto ao passar o cursor sobre o parágrafo dentro do link do botão. */
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  .texto h1 {
-    font-size: 5vw;
-  }
-
-  .texto h4 {
-    font-size: 3vw;
-  }
-
-  .texto p {
-    font-size: 2.5vw;
-    width: 90vw;
-  }
-
-  #conteudo {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .conteudo img {
-    width: 60vw;
-  }
-
-  .projetos {
-    width: 80vw;
-  }
-
-  .projetos h3 {
-    font-size: 3vw;
-  }
-
-  .suporte_botao .btn_ver_mais {
-    width: 30vw;
-    font-size: 3vw;
-  }
-  /* Estilos aplicados quando a largura da viewport é 768px ou menor, ajustando tamanhos de fonte e larguras para maior legibilidade e adaptabilidade em dispositivos menores. */
-}
-
-@media (max-width: 480px) {
-  .texto h1 {
-    font-size: 6vw;
-  }
-
-  .texto h4 {
-    font-size: 4vw;
-  }
-
-  .texto p {
-    font-size: 3vw;
-  }
-
-  .conteudo img {
-    width: 70vw;
-  }
-
-  .projetos {
-    width: 90vw;
-  }
-
-  .projetos h3 {
-    font-size: 4vw;
-  }
-
-  .suporte_botao .btn_ver_mais {
-    width: 40vw;
-    font-size: 4vw;
-  }
-  /* Estilos aplicados quando a largura da viewport é 480px ou menor, ajustando ainda mais tamanhos de fonte e larguras para dispositivos muito pequenos. */
 }
 
 
@@ -325,31 +253,90 @@ footer {
   
 }
 
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-.contact, .copyright, .quick-links, .certifications, .location {
-  flex: 1;
-  margin: 10px;
-
-}
-
-a {
-  color: #ffcc00; /* Cor para os links */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 .footer-quote {
   text-align: center;
   font-style: italic;
   padding-top: 5vh;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 450px) {
+
+header h3{
+  font-size: 10pt;
+}
+
+#conteudo {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+}
+
+.conteudo img {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  margin-top: 60px;
+}
+
+.texto h1 {
+  font-size: 20pt;
+}
+
+.texto h4 {
+  font-size: 15pt;
+}
+
+.texto p {
+  font-size: 10pt;
+}
+
+div .texto{
+  background-color: var(--cor-terciaria);
+  width: auto;
+  height: 320px;
+  border-radius: 10px;
+}
+
+
+#projetos {
+  padding-bottom:35px ;
+}
+
+.projetos {
+  width: 100px;
+  height: 100px;
+}
+
+.projetos img {
+ padding: 1px;
+  width: 35px;
+  height: auto;
+}
+
+.projetos h3 {
+  margin: 6px 0;
+  font-size: 5pt;
+}
+
+.suporte_botao .btn_ver_mais {
+  width: 60px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.btn_ver_mais  p {
+  font-size: 6pt;
+  letter-spacing: 1.5px;
+}
+
+.footer-quote {
+  padding-top: 12px;
+  font-size: 8pt;
+  letter-spacing: 1.5px;
+  
+}
+
+  
 }

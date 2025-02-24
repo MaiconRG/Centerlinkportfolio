@@ -1,8 +1,8 @@
-<h1 align="left">Olá seja bem vindo! 👋</h1>
+<h1 align="left">Olá sejam bem vindos! 👋</h1>
 
 ###
 
-<p align="left">Sou o Maicon de Chapecó-SC, Brasil,</p>
+<p align="left">Sou o Maicon Gretschmann, tenho 25 anos e moro em Porto Xavier, Brasil,</p>
 
 ###
 
@@ -30,7 +30,20 @@
 
 ###
 
-<p align="left">🔘 Responsividade em todas as plataformas<br><br>🔘 Design elegante sem pesar<br><br>🔘 Código escrito de forma fácil de entender <br>🔘 Contator de acessos a página com conexão de banco de dados</p>
+<p align="left">
+🔘 Responsividade em todas as plataformas<br><br>
+🔘 Design moderno e leve<br><br>
+🔘 Código limpo e leguivel<br><br>
+
+###
+
+<h4 align="left">🤖 FUNCIONALIDADES</h4>
+
+###
+
+<p align="left">
+🔘 Contator de acessos a página com conexão de banco de dados</p>
+<br>
 
 ###
 

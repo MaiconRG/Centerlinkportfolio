@@ -30,7 +30,7 @@
 
 ###
 
-<p align="left">🔘 Responsividade em todas as plataformas<br><br>🔘 Design elegante sem pesar<br><br>🔘 Código escrito de forma fácil de entender</p>
+<p align="left">🔘 Responsividade em todas as plataformas<br><br>🔘 Design elegante sem pesar<br><br>🔘 Código escrito de forma fácil de entender <br>🔘 Contator de acessos a página com conexão de banco de dados</p>
 
 ###
 
@@ -38,7 +38,7 @@
 
 ###
 
-<p align="left">CENTRALIZADOR<br>https://maiconrg.github.io/Centerlinkportifolio/<br><br>PORTFÓLIO<br>https://maiconrg.github.io/Centerlinkportifolio/pages/portifolio.html</p>
+<p align="left">CENTRALIZADOR<br>https://maiconrg.github.io/Centerlinkportfolio/<br><br>PORTFÓLIO<br>https://maiconrg.github.io/Centerlinkportfolio/pages/portifolio.html</p>
 
 ###
 

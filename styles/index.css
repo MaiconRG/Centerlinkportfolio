@@ -1,11 +1,12 @@
 /* Variáveis de Cores */
 :root {
-  --cor-primaria: #212121;
-  --cor-secundaria: #166FD4;
+  --cor-primari: #091315;
+  --cor-primaria: #011d22;
+  --cor-secundaria: #4dcde115;
   --cor-terciaria: rgba(71, 201, 253, 0.36);
   --cor-quaternaria: #f4f5fd;
   --cor-hover: #001949;
-  --cor-texto: #ffffff;
+  --cor-texto: ##4dcde1;
   --cor-texto-hover: #001949;
   --cor-borda-hover: #000000;
 }

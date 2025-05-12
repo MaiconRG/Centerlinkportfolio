@@ -1,0 +1,342 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Kanit:wght@500&display=swap");
+/* Importa fontes externas do Google Fonts. */
+
+/* Variáveis de cor */
+:root {    
+  --cor-primaria: #212121;
+  --cor-secundaria: #166FD4;
+  --cor-terciaria: #305d70;
+  --cor-terciaria-1: rgba(71, 201, 253, 0.36);
+  --cor-quaternaria: #f4f5fd;
+  --cor-hover: #001949;
+  --cor-texto: #ffffff;
+  --cor-texto-hover: #001949;
+  --cor-borda-hover: #000000;
+  --cor-de-titulos: #ffffff; /* Azul escuro para títulos */
+  --cor-de-sub-titulos: #1abc9c; /* Azul um pouco mais claro para subtítulos */
+  --cor-de-textos-1: #2c3e50; /* Azul escuro para textos */
+  --cor-de-textos-2: #2c3e50; /* Azul escuro para textos */
+  --cor-de-textos-3: #2c3e50; /* Azul escuro para textos */
+  --cor-links: #ffffff; /* Azul médio para links */
+  --cor-links-hover: #531abc; /* Verde água para hover dos links */
+  --cor-background: #ecf0f1; /* Fundo branco claro */
+  --cor-secundaria-background: #bdc3c7; /* Cinza claro para fundos */
+  --cor-de-cabecalho: #2c3e50; /* Azul escuro para cabeçalhos */
+  --cor-botoes: #2980b9; /* Azul médio para botões */
+  --cor-btn-hover: #1abc9c; /* Verde água no hover dos botões */
+  --cor-de-bordas: #95a5a6; /* Cinza claro para bordas */
+  --cor-sombras: rgba(0, 0, 0, 0.1); /* Sombras sutis */
+  --cor-fundos: #ffffff; /* Branco para fundos */
+  --cor-fundos-claros: #ecf0f1; /* Branco suave para áreas claras */
+  --cor-luz-hover: rgb(146 166 181 / 76%); /* Cor da luz ao redor das imagens no hover (amarelo claro) */
+  --cor-header: #2980b9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Reseta margens e preenchimentos para todos os elementos e define box-sizing para border-box,
+     garantindo que o padding e a borda sejam incluídos nas dimensões totais do elemento. */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  /* Define o contêiner principal como um flexbox com direção de coluna. */
+}
+
+header {
+  background-color: var(--cor-header);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 8vh;
+  /* Define o cabeçalho com uma cor de fundo, flexbox em direção inversa (elementos à direita),
+     alinhado verticalmente ao centro e altura de 10% da altura da viewport. */
+}
+
+.btn_ver_mais {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--cor-botoes);
+  color: var(--cor-de-textos);
+  cursor: pointer;
+  transition: 500ms;
+  /* Define um botão com largura e altura total do contêiner pai, bordas arredondadas,
+     sem bordas, cor de fundo e texto definidas por variáveis, cursor de ponteiro e
+     transição suave de 500ms para mudanças. */
+}
+
+.btn_ver_mais:hover {
+  background-color: var(--cor-btn-hover);
+  /* Muda a cor de fundo do botão ao passar o cursor para a cor definida para hover. */
+}
+
+#links {
+  font-size: 1vw;
+  display: flex;
+  margin-right: 5%;
+  text-decoration: none;
+  /* Define o contêiner de links como flexbox, adiciona uma margem direita de 5% e remove o sublinhado dos links. */
+}
+
+#links a {
+  margin-right: 7%;
+  color: var(--cor-links);
+  transition: 500ms;
+  text-decoration: none;
+  /* Define links dentro do contêiner com uma margem direita de 7%, cor de texto e transição suave de 500ms para mudanças. */
+}
+
+#links  a:hover {
+  color: var(--cor-links-hover);
+  /* Muda a cor do texto dos links ao passar o cursor para a cor definida para hover. */
+}
+
+#conteudo {
+  padding:  6vw 3vw 0vw 3vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--cor-primaria);
+  height: 68vh;
+  /* Define o contêiner de conteúdo como flexbox, com espaçamento igual entre itens,
+     alinhamento centralizado, cor de fundo e altura de 80% da altura da viewport,
+     permitindo que os itens sejam reorganizados em telas menores. */
+}
+
+.conteudo img {
+  width: 25vw;
+  height: auto;
+  margin: 5vw 0vw 5vw 7vw;
+  border-radius: 4vw 2vw 4vw 2vw;
+  filter: drop-shadow(3px 6px 9px rgba(146, 219, 253, 0.363));
+  /* Define as imagens dentro do contêiner de conteúdo para ter uma largura de 40% da largura da viewport,
+     largura máxima de 420px, altura automática, altura máxima de 420px e bordas arredondadas em círculo. */
+}
+
+h3 {
+  letter-spacing: 0.1vw;
+  text-decoration: none;
+  /* Define o espaçamento entre letras para cabeçalhos h3 e remove o sublinhado. */
+}
+
+.texto h1 {
+  font-size: 2.2vw;
+  letter-spacing: 0.2vw;
+  color: var(--cor-de-titulos);
+  /* Define o tamanho da fonte, espaçamento entre letras e cor para cabeçalhos h1 dentro de texto. */
+}
+
+.texto h4 {
+  margin-top: 2vh;
+  font-size: 1.8vw;
+  color: var(--cor-de-sub-titulos);
+  /* Define a margem superior, tamanho da fonte e cor para cabeçalhos h4 dentro de texto. */
+}
+
+.texto p {
+  width: auto;
+  height: 25vh;
+  margin-top: 3vh;
+  font-size: 1.25vw;
+  color: var(--cor-texto);
+  /* Define a largura máxima, largura relativa, margem superior, tamanho da fonte e cor para parágrafos dentro de texto. */
+}
+
+div .texto{
+  background-color: var(--cor-terciaria);
+  width: auto;
+  height: 22vw;
+  padding: 3vw;
+  margin: 0vw 5vw 0vw 5vw;
+  border-radius: 4vw 2vw 4vw 2vw;
+}
+
+#projetos {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--cor-primaria);
+  padding: 5vw 10vw;
+  /* Define o contêiner de projetos como flexbox com espaçamento igual entre itens,
+     cor de fundo, preenchimento superior e inferior e permite a reorganização em telas menores. */
+}
+
+.projetos {
+  width: 21vw;
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vh 1vw;
+  border: solid 0.18vw var(--cor-de-bordas);
+  background-color: var(--cor-terciaria);
+  border-radius: 3vw;
+  box-shadow: 0 0.4vw 0.8vw var(--cor-sombras);
+  transition: transform 0.3s;
+  padding-bottom: 1vw;
+  /* Define os projetos com largura máxima, largura relativa, altura automática,
+     layout flexível, bordas arredondadas, cor de fundo, sombra e transições suaves para transformações. */
+}
+
+.projetos:hover {
+  transform: translateY(-1vw);
+  /* Adiciona efeito de elevação ao passar o cursor sobre o projeto. */
+}
+
+.projetos img {
+ 
+  width: 12vw;
+  height: auto;
+  transition: filter 0.3s;
+  padding: 2.5vw 0 2.5vw 0;
+  /* Define a largura máxima, largura relativa, altura automática e bordas arredondadas para imagens dentro dos projetos,
+     e adiciona uma transição suave para o efeito de filtro. */
+}
+
+.projetos:hover img {
+  filter: drop-shadow(0vw 0vw 1vw var(--cor-luz-hover));
+  /* Adiciona uma sombra suave ao redor da imagem ao passar o cursor sobre o projeto,
+     criando um efeito de luz ao redor da imagem. */
+}
+
+.projetos h3 {
+  padding-top: 2vw;
+  font-weight: bold;
+  font-size: 1.4vw;
+  letter-spacing: 0.1vw;
+  color: var(--cor-btn-hover);
+  text-decoration: none;
+  /* Define a margem superior e inferior, peso da fonte, tamanho da fonte, espaçamento entre letras e cor para cabeçalhos h3 dentro dos projetos, e remove o sublinhado. */
+}
+
+.suporte_botao {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh 0;
+  /* Define o contêiner de suporte a botões como flexbox, com largura total, alinhamento e justificação centralizados e preenchimento vertical. */
+}
+
+.suporte_botao .btn_ver_mais {
+  width: 15vw;
+  height: 7vh;
+  border-radius: 1vw;
+  font-size: 1.2vw;
+  /* Define o botão dentro do suporte com largura e altura máximas, largura relativa, altura relativa,
+     bordas arredondadas e tamanho da fonte. */
+}
+
+.botao_ver_mais p {
+  color: var(--cor-links);
+  letter-spacing: 0.06vw;
+  font-size: 1vw;
+  transition: 500ms;
+  text-decoration: none;
+  /* Define a cor do texto e tamanho da fonte para o parágrafo dentro do link do botão, com transição suave de 500ms para mudanças e remove o sublinhado. */
+}
+
+
+
+
+footer {
+  background-color:var(--cor-terciaria);
+  color: white;
+  padding: 20px;
+  
+}
+
+.footer-quote {
+  text-align: center;
+  font-style: italic;
+  padding-top: 5vh;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 450px) {
+
+header h3{
+  font-size: 10pt;
+}
+
+#conteudo {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+}
+
+.conteudo img {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  margin-top: 60px;
+}
+
+.texto h1 {
+  font-size: 20pt;
+}
+
+.texto h4 {
+  font-size: 15pt;
+}
+
+.texto p {
+  font-size: 10pt;
+}
+
+div .texto{
+  background-color: var(--cor-terciaria);
+  width: auto;
+  height: 320px;
+  border-radius: 10px;
+}
+
+
+#projetos {
+  padding-bottom:35px ;
+}
+
+.projetos {
+  width: 100px;
+  height: 100px;
+}
+
+.projetos img {
+ padding: 1px;
+  width: 35px;
+  height: auto;
+}
+
+.projetos h3 {
+  margin: 6px 0;
+  font-size: 5pt;
+}
+
+.suporte_botao .btn_ver_mais {
+  width: 60px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.btn_ver_mais  p {
+  font-size: 6pt;
+  letter-spacing: 1.5px;
+}
+
+.footer-quote {
+  padding-top: 12px;
+  font-size: 8pt;
+  letter-spacing: 1.5px;
+  
+}
+
+  
+}

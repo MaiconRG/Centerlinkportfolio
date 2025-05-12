@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Olá, sou o Maicon, acesse o meu portifolio para ver as minhas abilidades como desemvolvedor,
+   se gostar de algum dos projetos eu posso fazer programar para você">
+  <meta name="keywords" content="desenvolvimento web, programação, programador, front-end,
+    back-end, desenvolvedor de software, HTML, CSS, JavaScript,
+    projetos de programação,experiência do usuário, UI/UX, Git, banco de dados, API,
+    tecnologia da informação, portfólio de programador">
+  <meta name="author" content="Maicon Riebe Gretschmann">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maicon Gretschmann</title>
+  <link rel="stylesheet" type="text/css" href="../styles/portifolio.css" />
+  <script src="../script/script.js" defer></script>
+</head>
+
+
+<body>
+  <main>
+    <header>
+      <span id="links">
+        <a href="#projetos">
+          <h3>INFORMAÇÕES</h3>
+        </a>
+        <!--
+        <a href="#contatar">
+          <h3>CONTATAR</h3>
+        </a>
+        -->
+      </span>
+    </header>
+
+    <div id="conteudo">
+      <div class="conteudo">
+        <img id="imagen_avatar_gif" data-src="../img/Foto_Perfil" src="../img/Avatar_S.png">
+
+      </div>
+      <div class="texto">
+        <h1>MAICON GRETSCHMANN</h1>
+        <h4>Sobre mim</h4>
+        <p>Tenho 25 anos, sou casado e pai, e encaro cada ação como uma oportunidade única de crescimento e aprendizado. Sou movido por desafios que me impulsionam a ultrapassar limites e alcançar novos patamares de excelência, tanto na vida pessoal quanto profissional.
+          Meu foco está em uma evolução contínua, com dedicação em adquirir conhecimentos e desenvolver habilidades que me permitam entregar resultados excepcionais. Acredito firmemente que o aperfeiçoamento é uma jornada constante, e meu compromisso é com a melhoria contínua em tudo o que faço.</p>
+
+      </div>
+    </div>
+    <div id="projetos">
+      
+      <div class="projetos" onclick="executa_projetos()">
+        <h3>PROJETOS</h3>
+        <img src="../img/PROJETOS/Projetos_S.png" alt="Imagem do projeto centralizador de link personalizado">
+        <div class="suporte_botao">
+          <div class="botao_ver_mais">
+          <button id="btn_desenvolvimento" class="btn_ver_mais"> <p>VER MAIS</p> </button>
+          </div> 
+       </div> 
+      </div>
+
+      <div class="projetos" onclick="executa_certificados()">
+        <h3>CERTIFICAÇÃO</h3>
+        <img src="../img/CERTIFICAÇÃO/CERTIFICACAO.png" alt="Imagem do projeto portifolio, com trabalhos de Web deigns, artes para midias sociais entre outros e certificados de Maicon Gretschmann ">
+        <div class="suporte_botao">
+          <div class="botao_ver_mais">
+         <button id="btn_certificados" class="btn_ver_mais"> <p>VER MAIS</p> </button>
+          </div> 
+       </div>  
+      </div>
+
+      <div class="projetos" onclick="executa_design()">
+        <h3>DESIGN</h3>
+        <img id="img_deisgn" src="../img/DESING/DESING.png" alt="Imagem do projeto centralizador de link personalizado">
+       
+        <div class="suporte_botao">
+          <div class="botao_ver_mais">
+          <button id="btn_design" class="btn_ver_mais"> <p>VER MAIS</p> </button>
+          </div> 
+       </div>
+      </div>
+    </div>
+    <div id="sobre">      
+    </div>
+  </main>
+  <footer>
+      <div class="footer-quote">
+      <p>Obrigado por visitar meu portfólio! Vamos criar algo incrível juntos!</p>
+      <br/>
+      <p>Copyright &copy; 2024 Maicon Gretschamann. Todos os direitos reservados.</p>
+      <br/>
+      <br/>
+    </div>
+</footer>
+</body>
+</html>

@@ -5,7 +5,8 @@
 
 /* Variáveis de cor */
 :root {    
-  --cor-primaria: #212121;
+  --cor-primaria: #081416e6 ;
+  --cor-primaria-1: #212121;
   --cor-secundaria: #166FD4;
   --cor-terciaria: #305d70;
   --cor-terciaria-1: rgba(71, 201, 253, 0.36);

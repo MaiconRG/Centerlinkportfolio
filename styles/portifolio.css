@@ -43,6 +43,36 @@
      garantindo que o padding e a borda sejam incluídos nas dimensões totais do elemento. */
 }
 
+/* Barra de rolagem*/
+/* Estilo geral da barra de rolagem */
+::-webkit-scrollbar {
+  width: 6px; /* largura da barra */
+  height: 6px; /* altura da barra (para barras horizontais) */
+}
+
+/* Cor do "track" (fundo da barra) */
+::-webkit-scrollbar-track {
+  background: var(--cor-primaria-1);
+  border-radius: 5px;
+}
+
+/* Cor da "thumb" (parte móvel) */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Cor da "thumb" ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Opcional: Estilizar o canto onde as barras horizontal e vertical se encontram */
+::-webkit-scrollbar-corner {
+  background: var(--cor-primaria-1);
+}
+
+
 main {
   display: flex;
   flex-direction: column;

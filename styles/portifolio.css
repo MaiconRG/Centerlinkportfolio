@@ -274,9 +274,6 @@ div .texto{
   /* Define a cor do texto e tamanho da fonte para o parágrafo dentro do link do botão, com transição suave de 500ms para mudanças e remove o sublinhado. */
 }
 
-
-
-
 footer {
   background-color:var(--cor-terciaria);
   color: white;
@@ -302,13 +299,14 @@ header h3{
   display: flex;
   flex-direction: column;
   height: 700px;
+  padding-top: 0vw;
 }
 
 .conteudo img {
   width: 250px;
   height: 250px;
+  margin: 10vw 0vw 10vw 0vw;
   border-radius: 15px;
-  margin-top: 60px;
 }
 
 .texto h1 {
@@ -326,7 +324,7 @@ header h3{
 div .texto{
   background-color: var(--cor-terciaria);
   width: auto;
-  height: 320px;
+  height: 90vw;
   border-radius: 10px;
 }
 

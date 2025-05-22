@@ -5,6 +5,7 @@
 
 /* Variáveis de cor */
 :root {    
+  --cor-gradiente: linear-gradient(135deg, #6f42c1, #1d3557);
   --cor-primaria: #081416e6 ;
   --cor-primaria-1: #212121;
   --cor-secundaria: #166FD4;
@@ -142,13 +143,11 @@ header {
 }
 
 .conteudo img {
-  width: 25vw;
+  border-radius: 4vw;
+  width: 21vw;
   height: auto;
   margin: 5vw 0vw 5vw 7vw;
-  border-radius: 4vw 2vw 4vw 2vw;
-  filter: drop-shadow(3px 6px 9px rgba(146, 219, 253, 0.363));
-  /* Define as imagens dentro do contêiner de conteúdo para ter uma largura de 40% da largura da viewport,
-     largura máxima de 420px, altura automática, altura máxima de 420px e bordas arredondadas em círculo. */
+  filter: drop-shadow(0px 0px 2px #a1c2d4) drop-shadow(0px 0px 5px #144661) drop-shadow(0px 0px 10px #094f74);
 }
 
 h3 {
@@ -232,7 +231,7 @@ div .texto{
 }
 
 .projetos:hover img {
-  filter: drop-shadow(0vw 0vw 1vw var(--cor-luz-hover));
+  filter: drop-shadow(0px 0px 5px #a1c2d4) drop-shadow(0px 0px 10px #144661) drop-shadow(0px 0px 30px #094f74);
   /* Adiciona uma sombra suave ao redor da imagem ao passar o cursor sobre o projeto,
      criando um efeito de luz ao redor da imagem. */
 }

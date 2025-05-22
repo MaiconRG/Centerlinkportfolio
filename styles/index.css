@@ -5,6 +5,7 @@
   --cor-secundaria: #4dcde115;
   --cor-terciaria: rgba(71, 201, 253, 0.36);
   --cor-quaternaria: #f4f5fd;
+  --cor-5: #e0f9fc;
   --cor-hover: #001949;
   --cor-texto: #4dcde1;
   --cor-texto-hover: #001949;
@@ -190,6 +191,11 @@ p {
 
 .titulos{
   padding-top: 1vw;
+}
+
+h4{
+color: var(--cor-5);
+
 }
 
 h1 {

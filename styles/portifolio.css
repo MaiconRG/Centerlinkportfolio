@@ -186,6 +186,7 @@ div .texto{
   padding: 3vw;
   margin: 0vw 5vw 0vw 5vw;
   border-radius: 4vw 2vw 4vw 2vw;
+  border: solid 0.18vw var(--cor-de-bordas);
 }
 
 #projetos {
@@ -321,7 +322,6 @@ header h3{
 }
 
 div .texto{
-  background-color: var(--cor-terciaria);
   width: auto;
   height: 90vw;
   border-radius: 10px;

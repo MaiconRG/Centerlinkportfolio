@@ -1,1 +1,0 @@
-git -v; add .; status; commit -m "Texto"; push origin main

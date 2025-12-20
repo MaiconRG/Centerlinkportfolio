@@ -7,6 +7,7 @@
   --cor-terciaria: #221b3f;
   --cor-quaternaria: #2d2455;
   --cor-quinta: #0a0812;
+  --cor-sexta: #ffff;
 
   /* Destaques / efeitos */
   --cor-sombra: #6b5cff33;
@@ -99,7 +100,7 @@ footer {
 .conteudoFlutuante {
   border: 2px solid var(--cor-borda);
   margin-top: 30px;
-  background-color: var(--cor-quaternaria);
+  background-color: var(--cor-sexta);
   border-radius: 15px;
   padding: 5px;
   transition: all 0.15s ease;

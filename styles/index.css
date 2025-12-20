@@ -262,3 +262,65 @@ footer p {
     font-size: 2rem;
   }
 }
+
+/* ============================= */
+/* MOBILE — HOVER SEMPRE ATIVO */
+/* ============================= */
+
+@media (hover: none) {
+  /* Elevação do card */
+  .conteudoFlutuante {
+    transform: translateY(-2px);
+  }
+
+  .botoesLink {
+    box-shadow: 0 8px 20px var(--cor-sombra);
+  }
+
+  /* Texto central */
+  .textoDirecional {
+    color: var(--cor-hover);
+  }
+
+  /* Ícones - movimento */
+  .iconsLogo {
+    transform: translateX(4px);
+
+    /* remove mask */
+    mask-image: none;
+    -webkit-mask-image: none;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  /* ============================= */
+  /* ÍCONES COLORIDOS (como hover) */
+  /* ============================= */
+
+  #portifolioColor {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3178/3178285.png");
+  }
+
+  #linkedinColor {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/2626/2626273.png");
+  }
+
+  #gitColor {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/270/270798.png");
+  }
+
+  #watsappColor {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/2626/2626279.png");
+  }
+
+  #instagranColor {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/2626/2626270.png");
+  }
+
+  #faceColor {
+    background-image: url("https://cdn-icons-png.flaticon.com/128/2626/2626269.png");
+  }
+}

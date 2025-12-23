@@ -2,12 +2,62 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- SEO -->
+    <title>Maicon Gretschmann | Front-end & Back-end Developer</title>
     <meta
       name="description"
-      content="Olá, sou o Maicon, acesse o meu portfólio para ver minhas habilidades como desenvolvedor."
+      content="Centralizador de links profissional de Maicon Gretschmann. Desenvolvedor Front-end e Back-end. Acesse portfólio, GitHub, LinkedIn e contatos."
     />
+    <meta
+      name="keywords"
+      content="Maicon Gretschmann, desenvolvedor front-end, desenvolvedor back-end, desenvolvedor full stack, portfólio desenvolvedor, programação web, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Maicon Gretschmann" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical -->
+    <link
+      rel="canonical"
+      href="https://maiconrg.github.io/Centerlinkportfolio/"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Maicon Gretschmann | Front-end & Back-end Developer"
+    />
+    <meta
+      property="og:description"
+      content="Centralizador de links e portfólio profissional de Maicon Gretschmann."
+    />
+    <meta
+      property="og:url"
+      content="https://maiconrg.github.io/Centerlinkportfolio/"
+    />
+    <meta
+      property="og:image"
+      content="https://maiconrg.github.io/Centerlinkportfolio/og-image.png"
+    />
+
+    <!-- Performance -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maicon Gretschmann</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/index.css" />
   </head>
 
@@ -18,66 +68,84 @@
       <p class="description">Projetos, experiências e formas de contato</p>
     </header>
 
-    <main>
-      <div class="conteudoFlutuante">
-        <a href="pages/portfolio.html" target="_blank">
-          <div class="botoesLink">
-            <span id="portfolioColor" class="iconsLogo"></span>
-            <h5 class="textoDirecional">PORTFÓLIO</h5>
-          </div>
-        </a>
-      </div>
+    <main aria-label="Links principais">
+      <a
+        class="conteudoFlutuante"
+        href="pages/portfolio.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Acessar portfólio"
+      >
+        <div class="botoesLink">
+          <span id="portfolioColor" class="iconsLogo"></span>
+          <h3 class="textoDirecional">PORTFÓLIO</h3>
+        </div>
+      </a>
 
-      <div class="conteudoFlutuante">
-        <a
-          href="https://www.linkedin.com/in/maicon-gretschmann/"
-          target="_blank"
-        >
-          <div class="botoesLink">
-            <span id="linkedinColor" class="iconsLogo"></span>
-            <h5 class="textoDirecional">LINKEDIN</h5>
-          </div>
-        </a>
-      </div>
+      <a
+        class="conteudoFlutuante"
+        href="https://www.linkedin.com/in/maicon-gretschmann/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Acessar LinkedIn"
+      >
+        <div class="botoesLink">
+          <span id="linkedinColor" class="iconsLogo"></span>
+          <h3 class="textoDirecional">LINKEDIN</h3>
+        </div>
+      </a>
 
-      <div class="conteudoFlutuante">
-        <a href="https://github.com/MaiconRG" target="_blank">
-          <div class="botoesLink">
-            <span id="gitColor" class="iconsLogo"></span>
-            <h5 class="textoDirecional">GITHUB</h5>
-          </div>
-        </a>
-      </div>
+      <a
+        class="conteudoFlutuante"
+        href="https://github.com/MaiconRG"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Acessar GitHub"
+      >
+        <div class="botoesLink">
+          <span id="gitColor" class="iconsLogo"></span>
+          <h3 class="textoDirecional">GITHUB</h3>
+        </div>
+      </a>
 
-      <div class="conteudoFlutuante">
-        <a href="https://wa.me/5549984321985" target="_blank">
-          <div class="botoesLink">
-            <span id="watsappColor" class="iconsLogo"></span>
-            <h5 class="textoDirecional">WHATSAPP</h5>
-          </div>
-        </a>
-      </div>
+      <a
+        class="conteudoFlutuante"
+        href="https://wa.me/5549984321985"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Entrar em contato via WhatsApp"
+      >
+        <div class="botoesLink">
+          <span id="watsappColor" class="iconsLogo"></span>
+          <h3 class="textoDirecional">WHATSAPP</h3>
+        </div>
+      </a>
 
-      <div class="conteudoFlutuante">
-        <a
-          href="https://www.instagram.com/maiconriebegretschmann/"
-          target="_blank"
-        >
-          <div class="botoesLink">
-            <span id="instagranColor" class="iconsLogo"></span>
-            <h5 class="textoDirecional">INSTAGRAM</h5>
-          </div>
-        </a>
-      </div>
+      <a
+        class="conteudoFlutuante"
+        href="https://www.instagram.com/maiconriebegretschmann/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Acessar Instagram"
+      >
+        <div class="botoesLink">
+          <span id="instagranColor" class="iconsLogo"></span>
+          <h3 class="textoDirecional">INSTAGRAM</h3>
+        </div>
+      </a>
 
-      <div class="conteudoFlutuante">
-        <a href="https://www.facebook.com/maicon.riebe/" target="_blank">
-          <div class="botoesLink">
-            <span id="faceColor" class="iconsLogo"></span>
-            <h5 class="textoDirecional">FACEBOOK</h5>
-          </div>
-        </a>
-      </div>
+      <a
+        class="conteudoFlutuante"
+        href="https://www.facebook.com/maicon.riebe/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Acessar Facebook"
+      >
+        <div class="botoesLink">
+          <span id="faceColor" class="iconsLogo"></span>
+          <h3 class="textoDirecional">FACEBOOK</h3>
+        </div>
+      </a>
     </main>
 
     <footer>
@@ -85,9 +153,7 @@
         Obrigado por visitar meu portfólio, vamos criar algo incrível juntos!
       </p>
       <br />
-      <p>
-        Copyright &copy; 2024 Maicon Gretschamann. Todos os direitos reservados.
-      </p>
+      <p>© 2024 Maicon Gretschmann. Todos os direitos reservados.</p>
     </footer>
   </body>
 </html>

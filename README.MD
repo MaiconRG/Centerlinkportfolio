@@ -51,7 +51,7 @@
 
 ###
 
-<p align="left">CENTRALIZADOR<br>https://maiconrg.github.io/Centerlinkportfolio/<br><br>PORTFÓLIO<br>https://maiconrg.github.io/Centerlinkportfolio/pages/portifolio.html</p>
+<p align="left">CENTRALIZADOR<br>https://maiconrg.github.io/Centerlinkportfolio/</p>
 
 ###
 

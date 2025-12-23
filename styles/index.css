@@ -89,6 +89,7 @@ footer {
 /* Botões */
 .conteudoFlutuante {
   transition: transform 0.2s ease;
+  display: inline-flex;
 }
 
 .conteudoFlutuante:hover {
@@ -237,17 +238,21 @@ footer {
 
   /* ÍCONES — APENAS PNG */
   .iconsLogo {
+    width: 40px;
+    height: 40px;
+
     transform: translateX(4px);
 
-    /* REMOVE COMPLETAMENTE O SVG */
+    /* remove SVG */
     mask-image: none !important;
     -webkit-mask-image: none !important;
 
     background-color: transparent !important;
-
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+
+    /* 🔑 padroniza visualmente os ícones */
+    background-size: 70%;
   }
 
   /* ============================= */

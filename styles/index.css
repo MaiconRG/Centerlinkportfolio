@@ -15,6 +15,11 @@
   --cor-titulos: #f6f6fa;
   --cor-subtitulos: #dddce6;
   --cor-paragrafo: #d9d6f2;
+  --cor-borda: rgba(111, 99, 255, 0.15);
+
+  /* Borda de destaque para header/footer */
+  --borda-destaque: 1px solid var(--cor-borda);
+  --borda-destaque-transicao: 0.18s;
 }
 
 /* ============================= */
@@ -43,6 +48,8 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border-bottom: var(--borda-destaque);
+  transition: border-color var(--borda-destaque-transicao) ease;
 }
 
 main {
@@ -57,11 +64,22 @@ footer {
   margin-top: 40px;
   height: 25vh;
   background: var(--cor-terciaria);
+  border-top: var(--borda-destaque);
+  transition: border-color var(--borda-destaque-transicao) ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center; /* centraliza o texto (p, spans etc.) dentro do footer) */
+}
+
+/* Destaque interativo das bordas */
+header:hover {
+  border-bottom-color: var(--cor-texto-hover);
+}
+
+footer:hover {
+  border-top-color: var(--cor-texto-hover);
 }
 
 /* ============================= */

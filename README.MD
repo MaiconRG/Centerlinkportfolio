@@ -41,12 +41,6 @@
 
 ###
 
-<p align="left">
-🔘 Contator de acessos a página com conexão de banco de dados</p>
-<br>
-
-###
-
 <h3 align="left">🌐 LINK</h3>
 
 ###
